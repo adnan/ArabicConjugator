@@ -1,0 +1,193 @@
+﻿<Window x:Class="ArabicConjugator.WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="720" Width="800">
+    <Grid>
+        <StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Button Name="btnConjugate" Content="Conjugate" Click="btnConjugate_Click"  Width="125" Margin="10" />
+
+                <ComboBox Width="125" Margin="10" FontSize="30" x:Name="VerbType" SelectionChanged="VerbType_SelectionChanged">
+                    <ComboBoxItem Tag="I">I - fa'ala - فعل</ComboBoxItem>
+                    <ComboBoxItem Tag="II">II - fa''ala - فعّل</ComboBoxItem>
+                    <ComboBoxItem Tag="III">III - faa'ala - فاعل</ComboBoxItem>
+                    <ComboBoxItem Tag="IV">IV - af'ala - أفعل</ComboBoxItem>
+                    <ComboBoxItem Tag="V">V - tafa''ala - تفعّل</ComboBoxItem>
+                    <ComboBoxItem Tag="VI">VI - tafaa'ala - تفاعل</ComboBoxItem>
+                    <ComboBoxItem Tag="VII">VII - infa'ala - انفعل</ComboBoxItem>
+                    <ComboBoxItem Tag="VIII">VIII - ittaf'ala - افتعل</ComboBoxItem>
+                    <ComboBoxItem Tag="IX">IX - if'alla - افعلّ</ComboBoxItem>
+                    <ComboBoxItem Tag="X">X - istaf'ala - استفعل</ComboBoxItem>
+                </ComboBox>
+                <ComboBox Width="125" Margin="10" FontSize="30" x:Name="RootThree" SelectionChanged="RootThree_SelectionChanged">
+                    <ComboBoxItem Tag="أ">أ</ComboBoxItem>
+                    <ComboBoxItem Tag="ب">ب</ComboBoxItem>
+                    <ComboBoxItem Tag="ت">ت</ComboBoxItem>
+                    <ComboBoxItem Tag="ث">ث</ComboBoxItem>
+                    <ComboBoxItem Tag="ج">ج</ComboBoxItem>
+                    <ComboBoxItem Tag="ح">ح</ComboBoxItem>
+                    <ComboBoxItem Tag="خ">خ</ComboBoxItem>
+                    <ComboBoxItem Tag="د">د</ComboBoxItem>
+                    <ComboBoxItem Tag="ذ">ذ</ComboBoxItem>
+                    <ComboBoxItem Tag="ر">ر</ComboBoxItem>
+                    <ComboBoxItem Tag="ز">ز</ComboBoxItem>
+                    <ComboBoxItem Tag="س">س</ComboBoxItem>
+                    <ComboBoxItem Tag="ش">ش</ComboBoxItem>
+                    <ComboBoxItem Tag="ص">ص</ComboBoxItem>
+                    <ComboBoxItem Tag="ض">ض</ComboBoxItem>
+                    <ComboBoxItem Tag="ط">ط</ComboBoxItem>
+                    <ComboBoxItem Tag="ظ">ظ</ComboBoxItem>
+                    <ComboBoxItem Tag="ع">ع</ComboBoxItem>
+                    <ComboBoxItem Tag="غ">غ</ComboBoxItem>
+                    <ComboBoxItem Tag="ف">ف</ComboBoxItem>
+                    <ComboBoxItem Tag="ق">ق</ComboBoxItem>
+                    <ComboBoxItem Tag="ك">ك</ComboBoxItem>
+                    <ComboBoxItem Tag="ل">ل</ComboBoxItem>
+                    <ComboBoxItem Tag="م">م</ComboBoxItem>
+                    <ComboBoxItem Tag="ن">ن</ComboBoxItem>
+                    <ComboBoxItem Tag="ه">ه</ComboBoxItem>
+                    <ComboBoxItem Tag="و">و</ComboBoxItem>
+                    <ComboBoxItem Tag="ي">ي</ComboBoxItem>
+                </ComboBox>
+                <ComboBox Width="125" Margin="10" FontSize="30" x:Name="RootTwo" SelectionChanged="RootTwo_SelectionChanged">
+                    <ComboBoxItem Tag="أ">أ</ComboBoxItem>
+                    <ComboBoxItem Tag="ب">ب</ComboBoxItem>
+                    <ComboBoxItem Tag="ت">ت</ComboBoxItem>
+                    <ComboBoxItem Tag="ث">ث</ComboBoxItem>
+                    <ComboBoxItem Tag="ج">ج</ComboBoxItem>
+                    <ComboBoxItem Tag="ح">ح</ComboBoxItem>
+                    <ComboBoxItem Tag="خ">خ</ComboBoxItem>
+                    <ComboBoxItem Tag="د">د</ComboBoxItem>
+                    <ComboBoxItem Tag="ذ">ذ</ComboBoxItem>
+                    <ComboBoxItem Tag="ر">ر</ComboBoxItem>
+                    <ComboBoxItem Tag="ز">ز</ComboBoxItem>
+                    <ComboBoxItem Tag="س">س</ComboBoxItem>
+                    <ComboBoxItem Tag="ش">ش</ComboBoxItem>
+                    <ComboBoxItem Tag="ص">ص</ComboBoxItem>
+                    <ComboBoxItem Tag="ض">ض</ComboBoxItem>
+                    <ComboBoxItem Tag="ط">ط</ComboBoxItem>
+                    <ComboBoxItem Tag="ظ">ظ</ComboBoxItem>
+                    <ComboBoxItem Tag="ع">ع</ComboBoxItem>
+                    <ComboBoxItem Tag="غ">غ</ComboBoxItem>
+                    <ComboBoxItem Tag="ف">ف</ComboBoxItem>
+                    <ComboBoxItem Tag="ق">ق</ComboBoxItem>
+                    <ComboBoxItem Tag="ك">ك</ComboBoxItem>
+                    <ComboBoxItem Tag="ل">ل</ComboBoxItem>
+                    <ComboBoxItem Tag="م">م</ComboBoxItem>
+                    <ComboBoxItem Tag="ن">ن</ComboBoxItem>
+                    <ComboBoxItem Tag="ه">ه</ComboBoxItem>
+                    <ComboBoxItem Tag="و">و</ComboBoxItem>
+                    <ComboBoxItem Tag="ي">ي</ComboBoxItem>
+                </ComboBox>
+                <ComboBox Width="125" Margin="10" FontSize="30" x:Name="RootOne" SelectionChanged="RootOne_SelectionChanged">
+                    <ComboBoxItem Tag="أ">أ</ComboBoxItem>
+                    <ComboBoxItem Tag="ب">ب</ComboBoxItem>
+                    <ComboBoxItem Tag="ت">ت</ComboBoxItem>
+                    <ComboBoxItem Tag="ث">ث</ComboBoxItem>
+                    <ComboBoxItem Tag="ج">ج</ComboBoxItem>
+                    <ComboBoxItem Tag="ح">ح</ComboBoxItem>
+                    <ComboBoxItem Tag="خ">خ</ComboBoxItem>
+                    <ComboBoxItem Tag="د">د</ComboBoxItem>
+                    <ComboBoxItem Tag="ذ">ذ</ComboBoxItem>
+                    <ComboBoxItem Tag="ر">ر</ComboBoxItem>
+                    <ComboBoxItem Tag="ز">ز</ComboBoxItem>
+                    <ComboBoxItem Tag="س">س</ComboBoxItem>
+                    <ComboBoxItem Tag="ش">ش</ComboBoxItem>
+                    <ComboBoxItem Tag="ص">ص</ComboBoxItem>
+                    <ComboBoxItem Tag="ض">ض</ComboBoxItem>
+                    <ComboBoxItem Tag="ط">ط</ComboBoxItem>
+                    <ComboBoxItem Tag="ظ">ظ</ComboBoxItem>
+                    <ComboBoxItem Tag="ع">ع</ComboBoxItem>
+                    <ComboBoxItem Tag="غ">غ</ComboBoxItem>
+                    <ComboBoxItem Tag="ف">ف</ComboBoxItem>
+                    <ComboBoxItem Tag="ق">ق</ComboBoxItem>
+                    <ComboBoxItem Tag="ك">ك</ComboBoxItem>
+                    <ComboBoxItem Tag="ل">ل</ComboBoxItem>
+                    <ComboBoxItem Tag="م">م</ComboBoxItem>
+                    <ComboBoxItem Tag="ن">ن</ComboBoxItem>
+                    <ComboBoxItem Tag="ه">ه</ComboBoxItem>
+                    <ComboBoxItem Tag="و">و</ComboBoxItem>
+                    <ComboBoxItem Tag="ي">ي</ComboBoxItem>
+                </ComboBox>
+
+            </StackPanel>
+
+            <TabControl>
+                <TabItem Header="Perfect Active">
+                    <ListView HorizontalAlignment="Left" FontSize="25" ScrollViewer.VerticalScrollBarVisibility="Hidden"
+                        ScrollViewer.HorizontalScrollBarVisibility="Hidden"
+		                Height="603" Margin="10,10,0,0" VerticalAlignment="Top" Width="770"
+		                Name="PerfectActiveList">
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn Header="Person" DisplayMemberBinding="{Binding Person}" Width="80"/>
+                                <GridViewColumn Header="Gender" DisplayMemberBinding="{Binding Gender}" Width="90"/>
+                                <GridViewColumn Header="Plurality" DisplayMemberBinding="{Binding Plurality}" Width="110"/>
+                                <GridViewColumn Header="English" DisplayMemberBinding="{Binding English}" Width="120"/>
+                                <GridViewColumn Header="Arabic" DisplayMemberBinding="{Binding Arabic}" Width="100"/>
+                                <GridViewColumn Header="Verb" DisplayMemberBinding="{Binding Verb}" Width="110"/>
+                                <GridViewColumn Header="Number" DisplayMemberBinding="{Binding Number}" Width="100"/>
+                            </GridView>
+                        </ListView.View>
+                    </ListView>
+                </TabItem>
+                <TabItem Header="Perfect Passive">
+                    <ListView HorizontalAlignment="Left" FontSize="25" ScrollViewer.VerticalScrollBarVisibility="Hidden"
+                        ScrollViewer.HorizontalScrollBarVisibility="Hidden"
+		                Height="603" Margin="10,10,0,0" VerticalAlignment="Top" Width="770"
+		                Name="PerfectPassiveList">
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn Header="Person" DisplayMemberBinding="{Binding Person}" Width="80"/>
+                                <GridViewColumn Header="Gender" DisplayMemberBinding="{Binding Gender}" Width="90"/>
+                                <GridViewColumn Header="Plurality" DisplayMemberBinding="{Binding Plurality}" Width="110"/>
+                                <GridViewColumn Header="English" DisplayMemberBinding="{Binding English}" Width="120"/>
+                                <GridViewColumn Header="Arabic" DisplayMemberBinding="{Binding Arabic}" Width="100"/>
+                                <GridViewColumn Header="Verb" DisplayMemberBinding="{Binding Verb}" Width="110"/>
+                                <GridViewColumn Header="Number" DisplayMemberBinding="{Binding Number}" Width="100"/>
+                            </GridView>
+                        </ListView.View>
+                    </ListView>
+                </TabItem>
+                <TabItem Header="Imperfect Active">
+                    <ListView HorizontalAlignment="Left" FontSize="25" ScrollViewer.VerticalScrollBarVisibility="Hidden"
+                        ScrollViewer.HorizontalScrollBarVisibility="Hidden"
+		                Height="603" Margin="10,10,0,0" VerticalAlignment="Top" Width="770"
+		                Name="ImperfectActiveList">
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn Header="Person" DisplayMemberBinding="{Binding Person}" Width="80"/>
+                                <GridViewColumn Header="Gender" DisplayMemberBinding="{Binding Gender}" Width="90"/>
+                                <GridViewColumn Header="Plurality" DisplayMemberBinding="{Binding Plurality}" Width="110"/>
+                                <GridViewColumn Header="English" DisplayMemberBinding="{Binding English}" Width="120"/>
+                                <GridViewColumn Header="Arabic" DisplayMemberBinding="{Binding Arabic}" Width="100"/>
+                                <GridViewColumn Header="Verb" DisplayMemberBinding="{Binding Verb}" Width="110"/>
+                                <GridViewColumn Header="Number" DisplayMemberBinding="{Binding Number}" Width="100"/>
+                            </GridView>
+                        </ListView.View>
+                    </ListView>
+                </TabItem>
+                <TabItem Header="Imperfect Passive">
+                    <ListView HorizontalAlignment="Left" FontSize="25" ScrollViewer.VerticalScrollBarVisibility="Hidden"
+                        ScrollViewer.HorizontalScrollBarVisibility="Hidden"
+		                Height="603" Margin="10,10,0,0" VerticalAlignment="Top" Width="770"
+		                Name="ImperfectPassiveList">
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn Header="Person" DisplayMemberBinding="{Binding Person}" Width="80"/>
+                                <GridViewColumn Header="Gender" DisplayMemberBinding="{Binding Gender}" Width="90"/>
+                                <GridViewColumn Header="Plurality" DisplayMemberBinding="{Binding Plurality}" Width="110"/>
+                                <GridViewColumn Header="English" DisplayMemberBinding="{Binding English}" Width="120"/>
+                                <GridViewColumn Header="Arabic" DisplayMemberBinding="{Binding Arabic}" Width="100"/>
+                                <GridViewColumn Header="Verb" DisplayMemberBinding="{Binding Verb}" Width="110"/>
+                                <GridViewColumn Header="Number" DisplayMemberBinding="{Binding Number}" Width="100"/>
+                            </GridView>
+                        </ListView.View>
+                    </ListView>
+                </TabItem>
+            </TabControl>
+
+
+        </StackPanel>
+    </Grid>
+</Window>

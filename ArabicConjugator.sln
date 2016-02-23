@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArabicConjugator.Core", "ArabicConjugator\ArabicConjugator.Core.csproj", "{F6960005-BC73-4974-B48F-17184141E9BD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArabicConjugator.WPF", "ArabicConjugator.WPF\ArabicConjugator.WPF.csproj", "{ECB02F45-33B3-4C4B-8AE5-2758834AC1CE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F6960005-BC73-4974-B48F-17184141E9BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6960005-BC73-4974-B48F-17184141E9BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6960005-BC73-4974-B48F-17184141E9BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6960005-BC73-4974-B48F-17184141E9BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECB02F45-33B3-4C4B-8AE5-2758834AC1CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECB02F45-33B3-4C4B-8AE5-2758834AC1CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECB02F45-33B3-4C4B-8AE5-2758834AC1CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECB02F45-33B3-4C4B-8AE5-2758834AC1CE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

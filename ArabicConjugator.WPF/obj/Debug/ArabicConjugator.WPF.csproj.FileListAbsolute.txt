@@ -1,0 +1,15 @@
+C:\Projects\ArabicConjugator\ArabicConjugator.WPF\bin\Debug\ArabicConjugator.WPF.exe.config
+C:\Projects\ArabicConjugator\ArabicConjugator.WPF\bin\Debug\ArabicConjugator.WPF.exe
+C:\Projects\ArabicConjugator\ArabicConjugator.WPF\bin\Debug\ArabicConjugator.WPF.pdb
+C:\Projects\ArabicConjugator\ArabicConjugator.WPF\bin\Debug\ArabicConjugator.dll
+C:\Projects\ArabicConjugator\ArabicConjugator.WPF\bin\Debug\ArabicConjugator.pdb
+C:\Projects\ArabicConjugator\ArabicConjugator.WPF\obj\Debug\ArabicConjugator.WPF.csprojResolveAssemblyReference.cache
+C:\Projects\ArabicConjugator\ArabicConjugator.WPF\obj\Debug\MainWindow.baml
+C:\Projects\ArabicConjugator\ArabicConjugator.WPF\obj\Debug\MainWindow.g.cs
+C:\Projects\ArabicConjugator\ArabicConjugator.WPF\obj\Debug\App.g.cs
+C:\Projects\ArabicConjugator\ArabicConjugator.WPF\obj\Debug\ArabicConjugator.WPF_MarkupCompile.cache
+C:\Projects\ArabicConjugator\ArabicConjugator.WPF\obj\Debug\ArabicConjugator.WPF.g.resources
+C:\Projects\ArabicConjugator\ArabicConjugator.WPF\obj\Debug\ArabicConjugator.WPF.Properties.Resources.resources
+C:\Projects\ArabicConjugator\ArabicConjugator.WPF\obj\Debug\ArabicConjugator.WPF.csproj.GenerateResource.Cache
+C:\Projects\ArabicConjugator\ArabicConjugator.WPF\obj\Debug\ArabicConjugator.WPF.exe
+C:\Projects\ArabicConjugator\ArabicConjugator.WPF\obj\Debug\ArabicConjugator.WPF.pdb
