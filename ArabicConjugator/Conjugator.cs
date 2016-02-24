@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using ArabicConjugator.Enums;
+using System.Collections.Generic;
 
 namespace ArabicConjugator
 {
@@ -94,20 +95,20 @@ namespace ArabicConjugator
             string i = root1 + harakat1 + root2 + harakat2 + harakat3 + root3 + SAKTA + "ت" + DHAMMA;
             string we = root1 + harakat1 + root2 + harakat2 + harakat3 + root3 + SAKTA + "ن" + FATHA + "ا";
 
-            patterns.Add(new Pattern { Number = 1, Person = "3rd", Gender = "M", Plurality = "Singular", Arabic = "هو", English = "He", Verb = he });
-            patterns.Add(new Pattern { Number = 2, Person = "3rd", Gender = "M", Plurality = "Dual", Arabic = "هما", English = "They (2M)", Verb = they2m });
-            patterns.Add(new Pattern { Number = 3, Person = "3rd", Gender = "M", Plurality = "Plural", Arabic = "هم", English = "They (3+M)", Verb = they3m });
-            patterns.Add(new Pattern { Number = 4, Person = "3rd", Gender = "F", Plurality = "Singular", Arabic = "هي", English = "She", Verb = she });
-            patterns.Add(new Pattern { Number = 5, Person = "3rd", Gender = "F", Plurality = "Dual", Arabic = "هما", English = "They (2F)", Verb = they2f });
-            patterns.Add(new Pattern { Number = 6, Person = "3rd", Gender = "F", Plurality = "Plural", Arabic = "هنّ", English = "They (3+F)", Verb = they3f });
-            patterns.Add(new Pattern { Number = 7, Person = "2nd", Gender = "M", Plurality = "Singular", Arabic = "أنت", English = "You (1M)", Verb = you1m });
-            patterns.Add(new Pattern { Number = 8, Person = "2nd", Gender = "M", Plurality = "Dual", Arabic = "أنتما", English = "You (2M)", Verb = you2m });
-            patterns.Add(new Pattern { Number = 9, Person = "2nd", Gender = "M", Plurality = "Plural", Arabic = "أنتم", English = "You (3+M)", Verb = you3m });
-            patterns.Add(new Pattern { Number = 10, Person = "2nd", Gender = "F", Plurality = "Singular", Arabic = "أنت", English = "You (1F)", Verb = you1f });
-            patterns.Add(new Pattern { Number = 11, Person = "2nd", Gender = "F", Plurality = "Dual", Arabic = "أنتما", English = "You (2F)", Verb = you2f });
-            patterns.Add(new Pattern { Number = 12, Person = "2nd", Gender = "F", Plurality = "Plural", Arabic = "أنتنّ", English = "You (3+F)", Verb = you3f });
-            patterns.Add(new Pattern { Number = 13, Person = "1st", Gender = "M/F", Plurality = "Singular", Arabic = "أنا", English = "I", Verb = i });
-            patterns.Add(new Pattern { Number = 14, Person = "1st", Gender = "M/F", Plurality = "Plural", Arabic = "نحن", English = "We", Verb = we });
+            patterns.Add(new Pattern { Number = 1, Person = "3rd", Gender = "M", Plurality = Plurality.Singular, Arabic = "هو", English = "He", Verb = he });
+            patterns.Add(new Pattern { Number = 2, Person = "3rd", Gender = "M", Plurality = Plurality.Dual, Arabic = "هما", English = "They (2M)", Verb = they2m });
+            patterns.Add(new Pattern { Number = 3, Person = "3rd", Gender = "M", Plurality = Plurality.Plural, Arabic = "هم", English = "They (3+M)", Verb = they3m });
+            patterns.Add(new Pattern { Number = 4, Person = "3rd", Gender = "F", Plurality = Plurality.Singular, Arabic = "هي", English = "She", Verb = she });
+            patterns.Add(new Pattern { Number = 5, Person = "3rd", Gender = "F", Plurality = Plurality.Dual, Arabic = "هما", English = "They (2F)", Verb = they2f });
+            patterns.Add(new Pattern { Number = 6, Person = "3rd", Gender = "F", Plurality = Plurality.Plural, Arabic = "هنّ", English = "They (3+F)", Verb = they3f });
+            patterns.Add(new Pattern { Number = 7, Person = "2nd", Gender = "M", Plurality = Plurality.Singular, Arabic = "أنت", English = "You (1M)", Verb = you1m });
+            patterns.Add(new Pattern { Number = 8, Person = "2nd", Gender = "M", Plurality = Plurality.Dual, Arabic = "أنتما", English = "You (2M)", Verb = you2m });
+            patterns.Add(new Pattern { Number = 9, Person = "2nd", Gender = "M", Plurality = Plurality.Plural, Arabic = "أنتم", English = "You (3+M)", Verb = you3m });
+            patterns.Add(new Pattern { Number = 10, Person = "2nd", Gender = "F", Plurality = Plurality.Singular, Arabic = "أنت", English = "You (1F)", Verb = you1f });
+            patterns.Add(new Pattern { Number = 11, Person = "2nd", Gender = "F", Plurality = Plurality.Dual, Arabic = "أنتما", English = "You (2F)", Verb = you2f });
+            patterns.Add(new Pattern { Number = 12, Person = "2nd", Gender = "F", Plurality = Plurality.Plural, Arabic = "أنتنّ", English = "You (3+F)", Verb = you3f });
+            patterns.Add(new Pattern { Number = 13, Person = "1st", Gender = "M/F", Plurality = Plurality.Singular, Arabic = "أنا", English = "I", Verb = i });
+            patterns.Add(new Pattern { Number = 14, Person = "1st", Gender = "M/F", Plurality = Plurality.Plural, Arabic = "نحن", English = "We", Verb = we });
 
             return patterns;
         }
@@ -131,20 +132,20 @@ namespace ArabicConjugator
             string i = "أ" + harakat1 + root1 + SAKTA + root2 + FATHA + harakat3 + root3 + DHAMMA;
             string we = "ن" + harakat1 + root1 + SAKTA + root2 + FATHA + harakat3 + root3 + DHAMMA;
 
-            patterns.Add(new Pattern { Number = 1, Person = "3rd", Gender = "M", Plurality = "Singular", Arabic = "هو", English = "He", Verb = he });
-            patterns.Add(new Pattern { Number = 2, Person = "3rd", Gender = "M", Plurality = "Dual", Arabic = "هما", English = "They (2M)", Verb = they2m });
-            patterns.Add(new Pattern { Number = 3, Person = "3rd", Gender = "M", Plurality = "Plural", Arabic = "هم", English = "They (3+M)", Verb = they3m });
-            patterns.Add(new Pattern { Number = 4, Person = "3rd", Gender = "F", Plurality = "Singular", Arabic = "هي", English = "She", Verb = she });
-            patterns.Add(new Pattern { Number = 5, Person = "3rd", Gender = "F", Plurality = "Dual", Arabic = "هما", English = "They (2F)", Verb = they2f });
-            patterns.Add(new Pattern { Number = 6, Person = "3rd", Gender = "F", Plurality = "Plural", Arabic = "هنّ", English = "They (3+F)", Verb = they3f });
-            patterns.Add(new Pattern { Number = 7, Person = "2nd", Gender = "M", Plurality = "Singular", Arabic = "أنت", English = "You (1M)", Verb = you1m });
-            patterns.Add(new Pattern { Number = 8, Person = "2nd", Gender = "M", Plurality = "Dual", Arabic = "أنتما", English = "You (2M)", Verb = you2m });
-            patterns.Add(new Pattern { Number = 9, Person = "2nd", Gender = "M", Plurality = "Plural", Arabic = "أنتم", English = "You (3+M)", Verb = you3m });
-            patterns.Add(new Pattern { Number = 10, Person = "2nd", Gender = "F", Plurality = "Singular", Arabic = "أنت", English = "You (1F)", Verb = you1f });
-            patterns.Add(new Pattern { Number = 11, Person = "2nd", Gender = "F", Plurality = "Dual", Arabic = "أنتما", English = "You (2F)", Verb = you2f });
-            patterns.Add(new Pattern { Number = 12, Person = "2nd", Gender = "F", Plurality = "Plural", Arabic = "أنتنّ", English = "You (3+F)", Verb = you3f });
-            patterns.Add(new Pattern { Number = 13, Person = "1st", Gender = "M/F", Plurality = "Singular", Arabic = "أنا", English = "I", Verb = i });
-            patterns.Add(new Pattern { Number = 14, Person = "1st", Gender = "M/F", Plurality = "Plural", Arabic = "نحن", English = "We", Verb = we });
+            patterns.Add(new Pattern { Number = 1, Person = "3rd", Gender = "M", Plurality = Plurality.Singular, Arabic = "هو", English = "He", Verb = he });
+            patterns.Add(new Pattern { Number = 2, Person = "3rd", Gender = "M", Plurality = Plurality.Dual, Arabic = "هما", English = "They (2M)", Verb = they2m });
+            patterns.Add(new Pattern { Number = 3, Person = "3rd", Gender = "M", Plurality = Plurality.Plural, Arabic = "هم", English = "They (3+M)", Verb = they3m });
+            patterns.Add(new Pattern { Number = 4, Person = "3rd", Gender = "F", Plurality = Plurality.Singular , Arabic = "هي", English = "She", Verb = she });
+            patterns.Add(new Pattern { Number = 5, Person = "3rd", Gender = "F", Plurality = Plurality.Dual, Arabic = "هما", English = "They (2F)", Verb = they2f });
+            patterns.Add(new Pattern { Number = 6, Person = "3rd", Gender = "F", Plurality = Plurality.Plural, Arabic = "هنّ", English = "They (3+F)", Verb = they3f });
+            patterns.Add(new Pattern { Number = 7, Person = "2nd", Gender = "M", Plurality = Plurality.Singular, Arabic = "أنت", English = "You (1M)", Verb = you1m });
+            patterns.Add(new Pattern { Number = 8, Person = "2nd", Gender = "M", Plurality = Plurality.Dual, Arabic = "أنتما", English = "You (2M)", Verb = you2m });
+            patterns.Add(new Pattern { Number = 9, Person = "2nd", Gender = "M", Plurality = Plurality.Plural, Arabic = "أنتم", English = "You (3+M)", Verb = you3m });
+            patterns.Add(new Pattern { Number = 10, Person = "2nd", Gender = "F", Plurality = Plurality.Singular, Arabic = "أنت", English = "You (1F)", Verb = you1f });
+            patterns.Add(new Pattern { Number = 11, Person = "2nd", Gender = "F", Plurality = Plurality.Dual, Arabic = "أنتما", English = "You (2F)", Verb = you2f });
+            patterns.Add(new Pattern { Number = 12, Person = "2nd", Gender = "F", Plurality = Plurality.Plural, Arabic = "أنتنّ", English = "You (3+F)", Verb = you3f });
+            patterns.Add(new Pattern { Number = 13, Person = "1st", Gender = "M/F", Plurality = Plurality.Singular, Arabic = "أنا", English = "I", Verb = i });
+            patterns.Add(new Pattern { Number = 14, Person = "1st", Gender = "M/F", Plurality = Plurality.Plural, Arabic = "نحن", English = "We", Verb = we });
 
             return patterns;
         }

@@ -11,13 +11,13 @@
                     <ComboBoxItem Tag="I">I - fa'ala - فعل</ComboBoxItem>
                     <ComboBoxItem Tag="II">II - fa''ala - فعّل</ComboBoxItem>
                     <ComboBoxItem Tag="III">III - faa'ala - فاعل</ComboBoxItem>
-                    <ComboBoxItem Tag="IV">IV - af'ala - أفعل</ComboBoxItem>
-                    <ComboBoxItem Tag="V">V - tafa''ala - تفعّل</ComboBoxItem>
-                    <ComboBoxItem Tag="VI">VI - tafaa'ala - تفاعل</ComboBoxItem>
-                    <ComboBoxItem Tag="VII">VII - infa'ala - انفعل</ComboBoxItem>
-                    <ComboBoxItem Tag="VIII">VIII - ittaf'ala - افتعل</ComboBoxItem>
-                    <ComboBoxItem Tag="IX">IX - if'alla - افعلّ</ComboBoxItem>
-                    <ComboBoxItem Tag="X">X - istaf'ala - استفعل</ComboBoxItem>
+                    <ComboBoxItem IsEnabled="False" Tag="IV">IV - af'ala - أفعل</ComboBoxItem>
+                    <ComboBoxItem IsEnabled="False" Tag="V">V - tafa''ala - تفعّل</ComboBoxItem>
+                    <ComboBoxItem IsEnabled="False" Tag="VI">VI - tafaa'ala - تفاعل</ComboBoxItem>
+                    <ComboBoxItem IsEnabled="False" Tag="VII">VII - infa'ala - انفعل</ComboBoxItem>
+                    <ComboBoxItem IsEnabled="False" Tag="VIII">VIII - ittaf'ala - افتعل</ComboBoxItem>
+                    <ComboBoxItem IsEnabled="False" Tag="IX">IX - if'alla - افعلّ</ComboBoxItem>
+                    <ComboBoxItem IsEnabled="False" Tag="X">X - istaf'ala - استفعل</ComboBoxItem>
                 </ComboBox>
                 <ComboBox Width="125" Margin="10" FontSize="30" x:Name="RootThree" SelectionChanged="RootThree_SelectionChanged">
                     <ComboBoxItem Tag="أ">أ</ComboBoxItem>
